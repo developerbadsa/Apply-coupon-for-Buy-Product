@@ -5,10 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-400">
+    <section class="flex justify-center items-center h-screen">
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/assets/img/img.jpeg" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="text-lg font-bold text-right">Price $<span id="productPrice">1000</span></h2>
+                <h2 class="card-title">Shoes!</h2>
 
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions grid grid-cols-2 ">
+                    <div class="form-control">
+                        <label class="input-group ">
+                          <input id="couponField" type="text" placeholder="Type here" class="input input-bordered input-sm" />
+                          <span id="couponApply" class="cursor-pointer">Apply</span>
+                        </label>
+                    </div>
+                    <button class="btn btn-warning text-white mt-16">Pay Now<span id="payBtn">1000</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/app/app.js"></script>
 </body>
 
 </html>
