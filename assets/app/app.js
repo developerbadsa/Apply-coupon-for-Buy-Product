@@ -10,7 +10,7 @@ document.getElementById('couponApply').addEventListener('click', function() {
         payBtn.innerText = discountPrice;
 
     } else {
-        console.log('ggg')
+        alert('please insert a valid coupon code')
     }
 
     inputCoupon.value = '';
